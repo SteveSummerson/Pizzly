@@ -1,10 +1,10 @@
 {
-  "name": "Pizzly",
-  "description": "A Node Application to simplify OAuth",
+  "name": "PIzzly",
+  "description": "Pizzly",
   "image": "heroku/node",
-  "repository": "https://github.com/Bearer/Pizzly",
+  "repository": "https://github.com/SteveSummerson/Pizzly",
   "keywords": ["OAuth", "node"],
-  "addons": ["heroku-postgresql:hobby-dev"],
+  "addons": ["heroku-postgresql:standard-0"],
   "scripts": {
     "postdeploy": "npm run db:create --env=production && npm run db:migrate --env=production"
   },
