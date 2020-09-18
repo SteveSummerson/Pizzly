@@ -5,8 +5,9 @@
   "repository": "https://github.com/SteveSummerson/Pizzly",
   "keywords": ["OAuth", "node"],
   "addons": [
-    {"heroku-postgresql:standard-0"},
-    {"heroku-postgresql:hobby-dev"}
+    {"plan" : "heroku-postgresql:standard-0"},
+    
+    {"plan" : "heroku-postgresql:hobby-dev"}
      ],
   "scripts": {
     "postdeploy": "npm run db:create --env=production && npm run db:migrate --env=production"
